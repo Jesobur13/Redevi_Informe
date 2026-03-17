@@ -378,7 +378,7 @@ function generarPDF() {
   // Col 1: valor fecha
   drawCell(ML+cw[0], y1, cw[1], rowH[1], BLANCO, [fecha], NEGRO, false, 9);
   // Col 2: No. de Informe
-  drawCell(ML+cw[0]+cw[1], y1, cw[2], rowH[1], GRIS_CL, ['No. De','Informe'], AZUL_TXT, true, 9);
+  drawCell(ML+cw[0]+cw[1], y1, cw[2], rowH[1], GRIS_CL, ['N. De','Informe'], AZUL_TXT, true, 8);
   // Col 3+4: valor número (span)
   drawCell(ML+cw[0]+cw[1]+cw[2], y1, cw[3]+cw[4], rowH[1], BLANCO, [numero], NEGRO, false, 9);
 
@@ -391,15 +391,15 @@ function generarPDF() {
 
   // F3: sub-headers + cargo value
   let y3 = y2 + rowH[2];
-  drawCell(ML+cw[0]+cw[1], y3, cw[2], rowH[3], GRIS_CL, ['Extensión','Telefónica'], AZUL_TXT, true, 8);
+  drawCell(ML+cw[0]+cw[1], y3, cw[2], rowH[3], GRIS_CL, ['Teléfono'], AZUL_TXT, true, 8);
   drawCell(ML+cw[0]+cw[1]+cw[2], y3, cw[3], rowH[3], GRIS_CL, ['Correo Electrónico'], AZUL_TXT, true, 9);
-  drawCell(ML+cw[0]+cw[1]+cw[2]+cw[3], y3, cw[4], rowH[3]+rowH[4], BLANCO, ['Analista Zonal','DECE - CZ8'], NEGRO, false, 9);
+  drawCell(ML+cw[0]+cw[1]+cw[2]+cw[3], y3, cw[4], rowH[3]+rowH[4], BLANCO, ['Analista Zonal DECE - CZ8'], NEGRO, false, 9);
 
   // F4: datos funcionario
   let y4 = y3 + rowH[3];
   drawCell(ML+cw[0], y4, cw[1], rowH[4], BLANCO, ['Jefferson Steeven','Solis Burgos'], NEGRO, false, 9);
   drawCell(ML+cw[0]+cw[1], y4, cw[2], rowH[4], BLANCO, ['0983875413'], NEGRO, false, 9);
-  drawCell(ML+cw[0]+cw[1]+cw[2], y4, cw[3], rowH[4], BLANCO, ['jefferson.solis@','educacion.gob.ec'], NEGRO, false, 8);
+  drawCell(ML+cw[0]+cw[1]+cw[2], y4, cw[3], rowH[4], BLANCO, ['jefferson.solis@educacion.gob.ec'], NEGRO, false, 8);
 
   // F5: headers destinatario
   let y5 = y2 + rowH[2] + rowH[3] + rowH[4];
@@ -410,9 +410,9 @@ function generarPDF() {
 
   // F6: sub-headers + cargo value destinatario
   let y6 = y5 + rowH[5];
-  drawCell(ML+cw[0]+cw[1], y6, cw[2], rowH[6], GRIS_CL, ['Extensión','Telefónica'], AZUL_TXT, true, 8);
+  drawCell(ML+cw[0]+cw[1], y6, cw[2], rowH[6], GRIS_CL, ['Teléfono'], AZUL_TXT, true, 8);
   drawCell(ML+cw[0]+cw[1]+cw[2], y6, cw[3], rowH[6], GRIS_CL, ['Correo Electrónico'], AZUL_TXT, true, 9);
-  drawCell(ML+cw[0]+cw[1]+cw[2]+cw[3], y6, cw[4], rowH[6]+rowH[7], BLANCO, ['Directora Zonal','Educ. Especializada','e Inclusiva'], NEGRO, false, 6.5);
+  drawCell(ML+cw[0]+cw[1]+cw[2]+cw[3], y6, cw[4], rowH[6]+rowH[7], BLANCO, ['Directora Zonal de Educ. Especializada e Inclusiva'], NEGRO, false, 6.5);
 
   // F7: datos destinataria
   let y7 = y6 + rowH[6];
